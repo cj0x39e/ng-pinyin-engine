@@ -1,0 +1,63 @@
+<div class="demo-wrap">
+  <div class="demo-box">
+    <h3 class="title">示例1：字符串数组搜索</h3>
+    <input [(ngModel)]="universityListSearch">
+    <ul class="search-list">
+      <li class="item" *ngFor="let university of universityList | pinyinCn:universityListSearch;">{{university}}</li>
+    </ul>
+    <pre>
+      &lt;input [(ngModel)]=&quot;universityListSearch&quot;&gt;
+      &lt;ul class=&quot;search-list&quot;&gt;
+        &lt;li class=&quot;item&quot; *ngFor=&quot;let university of universityList | pinyinCn:universityListSearch;&quot;&gt;{{"{"}}{{"{"}}university{{"}"}}{{"}"}}&lt;/li&gt;
+      &lt;/ul&gt;
+    </pre>
+  </div>
+
+  <div class="demo-box">
+    <h3 class="title">示例2：对象数组搜索</h3>
+    <input [(ngModel)]="universityAllListSearch">
+    <ul class="search-list">
+      <li class="item" *ngFor="let university of universityAllList | pinyinCn:universityAllListSearch:['name'];">{{university.name}}</li>
+    </ul>
+    <pre>
+      &lt;input [(ngModel)]=&quot;universityAllListSearch&quot;&gt;
+      &lt;ul class=&quot;search-list&quot;&gt;
+        &lt;li class=&quot;item&quot; *ngFor=&quot;let university of universityAllList | pinyinCn:universityAllListSearch:['name'];&quot;&gt;{{"{"}}{{"{"}}university.name{{"}"}}{{"}"}}&lt;/li&gt;
+      &lt;/ul&gt;
+    </pre>
+  </div>
+
+  <h4>TS文件：</h4>
+  <pre>
+  import {{"{"}} Component, OnInit {{"}"}} from '@angular/core';
+
+  @Component({{"{"}}
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
+  {{"}"}})
+  export class AppComponent implements OnInit {{"{"}}
+    universityList;
+    universityListSearch = '';
+
+    universityAllList;
+    universityAllListSearch = '';
+
+    ngOnInit(): void {{"{"}}
+      this.universityList = [
+        '清华大学',
+        '北京大学',
+        '中央美院'
+      ];
+
+      this.universityAllList = [
+        {{"{"}} id: 0, name: '清华大学' {{"}"}},
+        {{"{"}} id: 1, name: '北京大学' {{"}"}},
+        {{"{"}} id: 3, name: '中央美院' {{"}"}}
+      ];
+    {{"}"}}
+  {{"}"}}
+</pre>
+</div>
+
+

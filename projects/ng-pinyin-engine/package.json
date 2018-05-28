@@ -1,0 +1,13 @@
+{
+  "name": "ng-pinyin-engine",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "pinyin-engine": "^1.1.0"
+  },
+  "homepage": "https://github.com/taozhiw/ng-pinyin-engine",
+  "bugs": "https://github.com/taozhiw/ng-pinyin-engine/issues",
+  "author": "taozhi <taozhi1028@gmail.com>",
+  "license": "MIT"
+}
