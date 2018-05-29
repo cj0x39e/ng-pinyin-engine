@@ -17,7 +17,7 @@ npm install ng-pinyin-engine
 
 ### 导入
 
-可直接导入 `NgPinyinEngineModule` 模块。
+可直接导入 `NgPinyinEngineModule` 模块，导入后可使用简体与繁体管道。
 
 ```typescript
 import { NgPinyinEngineModule } from 'ng-pinyin-engine';
