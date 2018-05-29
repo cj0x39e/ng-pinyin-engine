@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:demo": "ng build --prod",
+    "build:demo": "node node_modules/@angular/cli/bin/ng build --prod --deploy-url=/ng-pinyin-engine/",
     "build:lib": "ng build --project=ng-pinyin-engine --prod",
     "test": "ng test",
     "lint": "ng lint",
