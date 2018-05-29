@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
-import { PinyinCnPipe } from './pinyin-cn.pipe';
-import { PinyinTwPipe } from './pinyin-tw.pipe';
+import { PinyinCnModule } from './pinyin-cn/pinyin-cn.module';
+import { PinyinTwModule } from './pinyin-tw/pinyin-tw.module';
 
 @NgModule({
-  imports: [
-  ],
-  declarations: [PinyinCnPipe, PinyinTwPipe],
-  exports: [PinyinCnPipe, PinyinTwPipe]
+  imports: [PinyinCnModule, PinyinTwModule],
+  exports: [PinyinCnModule, PinyinTwModule]
 })
 export class NgPinyinEngineModule { }

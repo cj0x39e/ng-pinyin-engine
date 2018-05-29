@@ -1,18 +1,15 @@
-import { Pipe, PipeTransform } from '@angular/core';
 
-const PinyinEngine = require('pinyin-engine/src/cn.js');
 
-/**
- * 简体中文 Pipe
- */
-@Pipe({
-  name: 'pinyinCn'
-})
-export class PinyinCnPipe implements PipeTransform {
-
+export class Pinyin {
   static FLAG = '__pinyinEngine__';
 
-  transform(list: any, ...args): any {
+  PinyinEngine: any;
+
+  constructor(PinyinEngine: any) {
+    this.PinyinEngine = PinyinEngine;
+  }
+
+  transform(list: any, args): any {
     if (!args || !args.length) {
       throw Error(`参数错误！
       查询列表为字符串数组时，需要配置查询关键字参数。
@@ -30,10 +27,10 @@ export class PinyinCnPipe implements PipeTransform {
       }
     }
 
-    if (!list[PinyinCnPipe.FLAG]) {
-      list[PinyinCnPipe.FLAG] = new PinyinEngine(list, keys);
+    if (!list[Pinyin.FLAG]) {
+      list[Pinyin.FLAG] = new this.PinyinEngine(list, keys);
     }
 
-    return list[PinyinCnPipe.FLAG].query(keyword);
+    return list[Pinyin.FLAG].query(keyword);
   }
 }

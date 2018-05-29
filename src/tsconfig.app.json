@@ -8,5 +8,10 @@
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "paths": {
+    "ng-pinyin-engine": [
+      "dist/ng-pinyin-engine"
+    ]
+  }
 }
