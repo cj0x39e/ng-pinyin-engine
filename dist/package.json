@@ -1,0 +1,26 @@
+{
+  "name": "ng-pinyin-engine",
+  "version": "1.1.4",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0 || ^5.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0 || ^5.0.0"
+  },
+  "homepage": "https://github.com/taozhiw/ng-pinyin-engine",
+  "bugs": "https://github.com/taozhiw/ng-pinyin-engine/issues",
+  "author": "taozhi <taozhi1028@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pinyin-engine": "^1.1.0",
+    "tslib": "^1.9.0"
+  },
+  "main": "bundles/ng-pinyin-engine.umd.js",
+  "module": "fesm5/ng-pinyin-engine.js",
+  "es2015": "fesm2015/ng-pinyin-engine.js",
+  "esm5": "esm5/ng-pinyin-engine.js",
+  "esm2015": "esm2015/ng-pinyin-engine.js",
+  "fesm5": "fesm5/ng-pinyin-engine.js",
+  "fesm2015": "fesm2015/ng-pinyin-engine.js",
+  "typings": "ng-pinyin-engine.d.ts",
+  "metadata": "ng-pinyin-engine.metadata.json",
+  "sideEffects": false
+}
