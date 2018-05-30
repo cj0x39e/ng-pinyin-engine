@@ -1,4 +1,7 @@
-## PinyinEngine
+[![npm version](https://badge.fury.io/js/ng-pinyin-engine.svg)](https://badge.fury.io/js/ng-pinyin-engine)
+[![CircleCI](https://circleci.com/gh/taozhiw/ng-pinyin-engine/tree/master.svg?style=svg)](https://circleci.com/gh/taozhiw/ng-pinyin-engine/tree/master)
+
+## ng-pinyin-engine
 
 [pinyin-engine](https://github.com/aui/pinyin-engine) Angular 封装。
 
