@@ -1,11 +1,11 @@
 {
   "name": "pinyin-engine",
-  "version": "0.0.0",
+  "version": "1.1.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build:demo": "node node_modules/@angular/cli/bin/ng build --prod --deploy-url=/ng-pinyin-engine/",
-    "build:lib": "ng build --project=ng-pinyin-engine --prod",
+    "build:lib": "ng build --prod --project=ng-pinyin-engine",
     "test": "ng test --watch=false --project=pinyin-engine",
     "lint": "ng lint",
     "e2e": "ng e2e"
