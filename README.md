@@ -67,3 +67,7 @@ import { PinyinCnModule } from 'ng-pinyin-engine';
 <li *ngFor="let item of list | pinyinCn:keyword:['name'];">{{item.name}}</li>
 ```
 
+
+## license
+
+MIT
