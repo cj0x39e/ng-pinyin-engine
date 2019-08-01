@@ -1,5 +1,5 @@
 [![npm version](https://badge.fury.io/js/ng-pinyin-engine.svg)](https://badge.fury.io/js/ng-pinyin-engine)
-[![CircleCI](https://circleci.com/gh/taozhiw/ng-pinyin-engine/tree/master.svg?style=svg)](https://circleci.com/gh/taozhiw/ng-pinyin-engine/tree/master)
+[![CircleCI](https://circleci.com/gh/cj0x39e/ng-pinyin-engine.svg?style=svg)](https://circleci.com/gh/cj0x39e/ng-pinyin-engine)
 
 ## ng-pinyin-engine
 
